@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "freertosfatconfig.h": "c",
+        "portmacro.h": "c",
+        "sdio.h": "c"
+    }
+}

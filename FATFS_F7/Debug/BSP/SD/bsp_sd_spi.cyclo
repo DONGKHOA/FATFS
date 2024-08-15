@@ -15,6 +15,8 @@
 ../BSP/SD/bsp_sd_spi.c:458:9:BSP_SD_SPI_ITConfig	1
 ../BSP/SD/bsp_sd_spi.c:463:9:BSP_SD_SPI_ReadBlocks	7
 ../BSP/SD/bsp_sd_spi.c:500:9:BSP_SD_SPI_WriteBlocks	10
-../BSP/SD/bsp_sd_spi.c:551:9:BSP_SD_SPI_ReadBlocks_DMA	1
-../BSP/SD/bsp_sd_spi.c:557:9:BSP_SD_SPI_WriteBlocks_DMA	1
-../BSP/SD/bsp_sd_spi.c:586:1:BSP_SD_SPI_GetCardInfo	1
+../BSP/SD/bsp_sd_spi.c:551:9:BSP_SD_SPI_ReadBlocks_DMA	2
+../BSP/SD/bsp_sd_spi.c:567:9:BSP_SD_SPI_WriteBlocks_DMA	2
+../BSP/SD/bsp_sd_spi.c:583:9:BSP_SD_SPI_Erase	2
+../BSP/SD/bsp_sd_spi.c:595:9:BSP_SD_SPI_GetCardState	1
+../BSP/SD/bsp_sd_spi.c:615:1:BSP_SD_SPI_GetCardInfo	1

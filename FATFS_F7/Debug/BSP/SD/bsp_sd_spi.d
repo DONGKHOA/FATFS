@@ -30,8 +30,8 @@ BSP/SD/bsp_sd_spi.o: ../BSP/SD/bsp_sd_spi.c ../BSP/SD/bsp_sd_def.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h \
- F:/USB_MSC-uSD/FATFS_F7/FATFS/ff.h \
- F:/USB_MSC-uSD/FATFS_F7/FATFS/ffconf.h
+ C:/Users/PhamTuan/STM32CubeIDE/workspace_1.16.0/USB_MSC-uSD/FATFS_F7/FATFS/ff.h \
+ C:/Users/PhamTuan/STM32CubeIDE/workspace_1.16.0/USB_MSC-uSD/FATFS_F7/FATFS/ffconf.h
 ../BSP/SD/bsp_sd_def.h:
 ../BSP/SD/bsp_sd_spi.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
@@ -64,5 +64,5 @@ BSP/SD/bsp_sd_spi.o: ../BSP/SD/bsp_sd_spi.c ../BSP/SD/bsp_sd_def.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h:
-F:/USB_MSC-uSD/FATFS_F7/FATFS/ff.h:
-F:/USB_MSC-uSD/FATFS_F7/FATFS/ffconf.h:
+C:/Users/PhamTuan/STM32CubeIDE/workspace_1.16.0/USB_MSC-uSD/FATFS_F7/FATFS/ff.h:
+C:/Users/PhamTuan/STM32CubeIDE/workspace_1.16.0/USB_MSC-uSD/FATFS_F7/FATFS/ffconf.h:

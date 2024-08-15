@@ -62,8 +62,8 @@ all: main-build
 main-build: FATFS_F7.elf secondary-outputs
 
 # Tool invocations
-FATFS_F7.elf FATFS_F7.map: $(OBJS) $(USER_OBJS) F:\USB_MSC-uSD\FATFS_F7\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FATFS_F7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"F:\USB_MSC-uSD\FATFS_F7\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FATFS_F7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FATFS_F7.elf FATFS_F7.map: $(OBJS) $(USER_OBJS) C:\Users\PhamTuan\STM32CubeIDE\workspace_1.16.0\USB_MSC-uSD\FATFS_F7\STM32F746NGHX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FATFS_F7.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:\Users\PhamTuan\STM32CubeIDE\workspace_1.16.0\USB_MSC-uSD\FATFS_F7\STM32F746NGHX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FATFS_F7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

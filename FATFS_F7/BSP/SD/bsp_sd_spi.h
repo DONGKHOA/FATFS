@@ -48,6 +48,7 @@ extern "C"
 #define CMD25  (25)        /* WRITE_MULTIPLE_BLOCK */
 #define CMD32  (32)        /* ERASE_ER_BLK_START */
 #define CMD33  (33)        /* ERASE_ER_BLK_END */
+#define CMD41  (0x40+41)    /* SEND_OP_COND (ACMD) */
 #define CMD38  (38)        /* ERASE */
 #define CMD55  (55)        /* APP_CMD */
 #define CMD58  (58)        /* READ_OCR */

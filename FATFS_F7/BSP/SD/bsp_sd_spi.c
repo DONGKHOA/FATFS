@@ -554,14 +554,14 @@ uint8_t BSP_SD_SPI_ReadBlocks_DMA(uint32_t *pData,
 {
 	uint8_t sd_state = MSD_OK;
 
-	  /* Read block(s) in DMA transfer mode */
-	  if (HAL_SD_ReadBlocks_DMA(HSPI_SDCARD, (uint8_t *)pData, ReadAddr, NumOfBlocks)
-	      != HAL_OK)
-	  {
-	    sd_state = MSD_ERROR;
-	  }
+	/* Read block(s) in DMA transfer mode */
+	if (HAL_SD_ReadBlocks_DMA(HSPI_SDCARD, (uint8_t *)pData, ReadAddr, NumOfBlocks)
+		!= HAL_OK)
+	{
+		sd_state = MSD_ERROR;
+	}
 
-	  return sd_state;
+	return sd_state;
 }
 
 uint8_t BSP_SD_SPI_WriteBlocks_DMA(uint32_t *pData,
@@ -570,14 +570,14 @@ uint8_t BSP_SD_SPI_WriteBlocks_DMA(uint32_t *pData,
 {
 	uint8_t sd_state = MSD_OK;
 
-	  /* Write block(s) in DMA transfer mode */
-	  if (HAL_SD_WriteBlocks_DMA(HSPI_SDCARD, (uint8_t *)pData, WriteAddr, NumOfBlocks)
-	      != HAL_OK)
-	  {
-	    sd_state = MSD_ERROR;
-	  }
+	/* Write block(s) in DMA transfer mode */
+	if (HAL_SD_WriteBlocks_DMA(HSPI_SDCARD, (uint8_t *)pData, WriteAddr, NumOfBlocks)
+		!= HAL_OK)
+	{
+		sd_state = MSD_ERROR;
+	}
 
-	  return sd_state;
+	return sd_state;
 }
 /////////////////////////////////////////////////////////////
 uint8_t BSP_SD_SPI_Erase(uint32_t StartAddr, uint32_t EndAddr)

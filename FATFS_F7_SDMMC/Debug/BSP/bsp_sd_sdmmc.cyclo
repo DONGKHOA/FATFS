@@ -1,0 +1,16 @@
+../BSP/bsp_sd_sdmmc.c:23:1:BSP_SD_SDMMC_Init	2
+../BSP/bsp_sd_sdmmc.c:49:1:BSP_SD_SDMMC_ITConfig	1
+../BSP/bsp_sd_sdmmc.c:72:1:BSP_SD_SDMMC_ReadBlocks	2
+../BSP/bsp_sd_sdmmc.c:101:1:BSP_SD_SDMMC_WriteBlocks	2
+../BSP/bsp_sd_sdmmc.c:129:1:BSP_SD_SDMMC_ReadBlocks_DMA	2
+../BSP/bsp_sd_sdmmc.c:156:1:BSP_SD_SDMMC_WriteBlocks_DMA	2
+../BSP/bsp_sd_sdmmc.c:182:1:BSP_SD_SDMMC_Erase	2
+../BSP/bsp_sd_sdmmc.c:207:1:BSP_SD_SDMMC_GetCardState	1
+../BSP/bsp_sd_sdmmc.c:220:1:BSP_SD_SDMMC_GetCardInfo	1
+../BSP/bsp_sd_sdmmc.c:235:1:HAL_SD_AbortCallback	1
+../BSP/bsp_sd_sdmmc.c:246:1:HAL_SD_TxCpltCallback	1
+../BSP/bsp_sd_sdmmc.c:257:1:HAL_SD_RxCpltCallback	1
+../BSP/bsp_sd_sdmmc.c:269:1:BSP_SD_SDMMC_AbortCallback	1
+../BSP/bsp_sd_sdmmc.c:279:1:BSP_SD_SDMMC_WriteCpltCallback	1
+../BSP/bsp_sd_sdmmc.c:289:1:BSP_SD_SDMMC_ReadCpltCallback	1
+../BSP/bsp_sd_sdmmc.c:299:1:BSP_SD_SDMMC_IsDetected	1

@@ -1,0 +1,10 @@
+../FATFS/diskio.c:33:1:SD_CheckStatusWithTimeout	24	static
+../FATFS/diskio.c:49:1:SD_CheckStatus	16	static
+../FATFS/diskio.c:66:1:disk_status	16	static
+../FATFS/diskio.c:77:1:disk_initialize	16	static
+../FATFS/diskio.c:92:1:disk_read	32	static
+../FATFS/diskio.c:233:1:disk_write	32	static
+../FATFS/diskio.c:351:1:disk_ioctl	56	static
+../FATFS/diskio.c:408:1:BSP_SD_SDMMC_WriteCpltCallback	4	static
+../FATFS/diskio.c:420:1:BSP_SD_SDMMC_ReadCpltCallback	4	static
+../FATFS/diskio.c:431:1:get_fattime	4	static

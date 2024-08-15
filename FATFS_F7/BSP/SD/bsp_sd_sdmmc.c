@@ -10,6 +10,8 @@
 #include "bsp_sd_def.h"
 #include "bsp_sd_sdmmc.h"
 
+#if (SD_USE_SDMMC == 1) || (SD_USE_SDIO == 1)
+
 /* Extern variables ---------------------------------------------------------*/
 
 extern SD_HandleTypeDef hsd1;
@@ -306,3 +308,5 @@ BSP_SD_SDMMC_IsDetected (void)
 
   return status;
 }
+
+#endif

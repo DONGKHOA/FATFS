@@ -1,5 +1,5 @@
 BSP/SD/bsp_sd_sdmmc.o: ../BSP/SD/bsp_sd_sdmmc.c ../BSP/SD/bsp_sd_def.h \
- ../BSP/SD/bsp_sd_sdmmc.h \
+ ../BSP/SD/bsp_sd_spi.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -29,9 +29,10 @@ BSP/SD/bsp_sd_sdmmc.o: ../BSP/SD/bsp_sd_sdmmc.c ../BSP/SD/bsp_sd_def.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_sd.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
- ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h
+ ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h \
+ ../BSP/SD/bsp_sd_sdmmc.h
 ../BSP/SD/bsp_sd_def.h:
-../BSP/SD/bsp_sd_sdmmc.h:
+../BSP/SD/bsp_sd_spi.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:
@@ -62,3 +63,4 @@ BSP/SD/bsp_sd_sdmmc.o: ../BSP/SD/bsp_sd_sdmmc.c ../BSP/SD/bsp_sd_def.h \
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_ll_sdmmc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h:
+../BSP/SD/bsp_sd_sdmmc.h:

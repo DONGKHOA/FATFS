@@ -21,10 +21,34 @@ extern "C"
 #define SD_USE_SPI   1
 #define SD_USE_DMA   1
 
+/**
+ * @brief  SD status structure definition
+ */
+#define MSD_OK                   ((uint8_t)0x00)
+#define MSD_ERROR                ((uint8_t)0x01)
+#define MSD_ERROR_SD_NOT_PRESENT ((uint8_t)0x02)
 
+/**
+ * @brief  SD transfer state definition
+ */
+#define SD_TRANSFER_OK   ((uint8_t)0x00)
+#define SD_TRANSFER_BUSY ((uint8_t)0x01)
+
+#define SD_PRESENT     ((uint8_t)0x01)
+#define SD_NOT_PRESENT ((uint8_t)0x00)
+#define SD_DATATIMEOUT ((uint32_t)100000000)
 
 /* Includes -----------------------------------------------------------------*/
 
+#if (SD_USE_SDMMC == 1) || (SD_USE_SDIO == 1)
+
+#include "bsp_sd_sdmmc.h"
+
+#elif (SD_USE_SPI == 1)
+
+#include "bsp_sd_spi.h"
+
+#endif
 
 #ifdef __cplusplus
 }

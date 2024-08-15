@@ -7,7 +7,7 @@
 /* storage control modules to the FatFs module with a defined API.       */
 /*-----------------------------------------------------------------------*/
 
-#include <bsp_sd_def.h>
+#include "bsp_sd_sdmmc.h"
 #include "ff.h"     /* Obtains integer types */
 #include "diskio.h" /* Declarations of disk functions */
 
@@ -51,7 +51,7 @@ disk_initialize(BYTE pdrv /* Physical drive nmuber to identify the drive */
 )
 {
   Stat = STA_NOINIT;
-  if (BSP_SD_SPI_Init() == MSD_OK)
+  if (BSP_SD_SDMMC_Init() == MSD_OK)
   {
     Stat &= ~STA_NOINIT;
   }
@@ -71,7 +71,7 @@ disk_read(BYTE  pdrv,   /* Physical drive nmuber to identify the drive */
 {
   DRESULT res = RES_ERROR;
 
-  if (BSP_SD_SPI_ReadBlocks(
+  if (BSP_SD_SDMMC_ReadBlocks(
           (uint32_t *)buff, (uint32_t)(sector), count, SD_TIMEOUT)
       == MSD_OK)
   {
@@ -105,7 +105,7 @@ disk_write(BYTE pdrv, const BYTE *buff, LBA_t sector, UINT count)
 {
   DRESULT res = RES_ERROR;
 
-  if (BSP_SD_SPI_WriteBlocks(
+  if (BSP_SD_SDMMC_WriteBlocks(
           (uint32_t *)buff, (uint32_t)(sector), count, SD_TIMEOUT)
       == MSD_OK)
   {
@@ -128,7 +128,7 @@ disk_ioctl(BYTE  pdrv, /* Physical drive nmuber (0..) */
 )
 {
   DRESULT               res = RES_ERROR;
-  BSP_SD_SPI_CardInfo CardInfo;
+  BSP_SD_SDMMC_CardInfo CardInfo;
 
   if (Stat & STA_NOINIT)
   {
@@ -144,21 +144,21 @@ disk_ioctl(BYTE  pdrv, /* Physical drive nmuber (0..) */
 
     /* Get number of sectors on the disk (DWORD) */
     case GET_SECTOR_COUNT:
-      BSP_SD_SPI_GetCardInfo(&CardInfo);
+    	BSP_SD_SDMMC_GetCardInfo(&CardInfo);
       *(DWORD *)buff = CardInfo.LogBlockNbr;
       res            = RES_OK;
       break;
 
     /* Get R/W sector size (WORD) */
     case GET_SECTOR_SIZE:
-      BSP_SD_SPI_GetCardInfo(&CardInfo);
+    	BSP_SD_SDMMC_GetCardInfo(&CardInfo);
       *(WORD *)buff = CardInfo.LogBlockSize;
       res           = RES_OK;
       break;
 
     /* Get erase block size in unit of sector (DWORD) */
     case GET_BLOCK_SIZE:
-      BSP_SD_SPI_GetCardInfo(&CardInfo);
+    	BSP_SD_SDMMC_GetCardInfo(&CardInfo);
       *(DWORD *)buff = CardInfo.LogBlockSize / SD_DEFAULT_BLOCK_SIZE;
       res            = RES_OK;
       break;

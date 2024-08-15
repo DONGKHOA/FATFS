@@ -1,6 +1,5 @@
 FATFS/diskio.o: ../FATFS/diskio.c \
- F:/USB_MSC-uSD/FATFS_F7/BSP/SD/bsp_sd_def.h \
- F:/USB_MSC-uSD/FATFS_F7/BSP/SD/bsp_sd_spi.h \
+ F:/USB_MSC-uSD/FATFS_F7/BSP/SD/bsp_sd_sdmmc.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h \
  ../Core/Inc/stm32f7xx_hal_conf.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h \
@@ -32,8 +31,7 @@ FATFS/diskio.o: ../FATFS/diskio.c \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi.h \
  ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_spi_ex.h ../FATFS/ff.h \
  ../FATFS/ffconf.h ../FATFS/diskio.h
-F:/USB_MSC-uSD/FATFS_F7/BSP/SD/bsp_sd_def.h:
-F:/USB_MSC-uSD/FATFS_F7/BSP/SD/bsp_sd_spi.h:
+F:/USB_MSC-uSD/FATFS_F7/BSP/SD/bsp_sd_sdmmc.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:
 ../Core/Inc/stm32f7xx_hal_conf.h:
 ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:

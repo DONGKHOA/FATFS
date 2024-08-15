@@ -5,16 +5,13 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../BSP/SD/bsp_sd_sdmmc.c \
-../BSP/SD/bsp_sd_spi.c 
+../BSP/SD/bsp_sd_sdmmc.c 
 
 OBJS += \
-./BSP/SD/bsp_sd_sdmmc.o \
-./BSP/SD/bsp_sd_spi.o 
+./BSP/SD/bsp_sd_sdmmc.o 
 
 C_DEPS += \
-./BSP/SD/bsp_sd_sdmmc.d \
-./BSP/SD/bsp_sd_spi.d 
+./BSP/SD/bsp_sd_sdmmc.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -24,7 +21,7 @@ BSP/SD/%.o BSP/SD/%.su BSP/SD/%.cyclo: ../BSP/SD/%.c BSP/SD/subdir.mk
 clean: clean-BSP-2f-SD
 
 clean-BSP-2f-SD:
-	-$(RM) ./BSP/SD/bsp_sd_sdmmc.cyclo ./BSP/SD/bsp_sd_sdmmc.d ./BSP/SD/bsp_sd_sdmmc.o ./BSP/SD/bsp_sd_sdmmc.su ./BSP/SD/bsp_sd_spi.cyclo ./BSP/SD/bsp_sd_spi.d ./BSP/SD/bsp_sd_spi.o ./BSP/SD/bsp_sd_spi.su
+	-$(RM) ./BSP/SD/bsp_sd_sdmmc.cyclo ./BSP/SD/bsp_sd_sdmmc.d ./BSP/SD/bsp_sd_sdmmc.o ./BSP/SD/bsp_sd_sdmmc.su
 
 .PHONY: clean-BSP-2f-SD
 

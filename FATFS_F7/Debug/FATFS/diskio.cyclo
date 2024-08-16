@@ -1,8 +1,0 @@
-../FATFS/diskio.c:35:1:disk_status	2
-../FATFS/diskio.c:50:1:disk_initialize	2
-../FATFS/diskio.c:66:1:disk_read	2
-../FATFS/diskio.c:104:1:disk_write	2
-../FATFS/diskio.c:125:1:disk_ioctl	6
-../FATFS/diskio.c:182:1:BSP_SD_WriteCpltCallback	1
-../FATFS/diskio.c:194:1:BSP_SD_ReadCpltCallback	1
-../FATFS/diskio.c:205:1:get_fattime	1
